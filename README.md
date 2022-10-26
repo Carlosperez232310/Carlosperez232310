@@ -2,4 +2,4 @@
 - 👀 I’m interested in Machine Learning and Information
 - 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on my project
-- 📫 How to reach me caarlosperez232310@gmail.com
+- 📫 How to reach me carlosperez232310@gmail.com
