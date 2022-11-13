@@ -9,7 +9,7 @@ body{
 
 .image-grid {
 	--gap: 16px;
-	--num-cols: 4;
+	--num-cols: 2;
 	--row-height: 300px;
 
 	box-sizing: border-box;
