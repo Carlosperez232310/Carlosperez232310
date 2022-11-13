@@ -9,8 +9,8 @@ body{
 
 .image-grid {
 	--gap: 16px;
-	--num-cols: 2;
-	--row-height: 300px;
+	--num-cols: 3;
+	--row-height: 720px;
 
 	box-sizing: border-box;
 	padding: var(--gap);
