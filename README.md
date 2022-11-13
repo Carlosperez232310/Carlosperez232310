@@ -1,5 +1,0 @@
-- 👋 Hi, I’m @Carlosperez232310
-- 👀 I’m interested in Machine Learning and Information
-- 🌱 I’m currently learning Python
-- 💞️ I’m looking to collaborate on my project
-- 📫 How to reach me carlosperez232310@gmail.com
