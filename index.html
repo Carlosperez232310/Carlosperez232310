@@ -1,9 +1,82 @@
-<html>
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>My Art Page</title>
-    <link rel="stylesheet"  href="style.css"  type="text/css" />
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head><!--create an image grid that is flexible-->
+<style>
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+        margin: 10px;
+    }
+    .image-grid-col-2 {
+        grid-column: span 2;
+    }
+    .image-grid-row-2 {
+        grid-row: span 2;
+    }
+    .image {
+        position: relative;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .image a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+    }
+    .image a:hover {
+        opacity: 1;
+    }
+    .image a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        transform: scale(0);
+        transition: transform 0.5s;
+    }
+    .image a:hover::before {
+        transform: scale(1);
+    }
+    .image a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: #fff;
+        z-index: 1;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.5s;
+    }
+    .image a:hover::after {
+        transform: translate(-50%, -50%) scale(1);
+    }
+</style>
+
+
 <body>
     <div class="image-grid">
         <div class="image">
@@ -11,38 +84,12 @@
                 <img class="image-grid-col-2 image-grid-row-2" src="./pinktest.JPG" alt="Image 1" />
             </a>
         </div>
-        <div class="image">
-            <a href="https://photos.google.com/search/%20sky/photo/AF1QipMrQo2crigfPb9moDd3ysuvbEpPaJV5eIKdpbqR">
-                <img class="image-grid-col-2 image-grid-row-2" src="babyshower.JPG" alt="Image 2" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="/pinktest.JPG">
-                <img class="image-grid-col-2 image-grid-row-2" src="./RV.jpg" alt="Image 3" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="https://photos.google.com/search/%20sky/photo/AF1QipMrQo2crigfPb9moDd3ysuvbEpPaJV5eIKdpbqR">
-                <img class="image-grid-col-2 image-grid-row-2" src="./edit.jpg" alt="Image 4" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="images/5.jpg">
-                <img class="image-grid-col-2 image-grid-row-2" src="./corner.JPG" alt="Image 5" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="images/6.jpg">
-                <img class="image-grid-col-2 image-grid-row-2" src="./flower.JPG" alt="Image 6" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="../pinktest.JPG">
-                <img class="image-grid-col-2 image-grid-row-2" src="./willow.jpg" alt="Image 7" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="images/9.jpg">
-                <img class="image-grid-col-2 image-grid-row-2" src="./trees.jpg" alt="Image 9" />
-            </a>
-        </div>
+
+    
+
+
+
+    
+</body>
+
+</html>
