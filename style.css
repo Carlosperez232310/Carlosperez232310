@@ -8,7 +8,7 @@ body {
 }
 
 .image-grid {
-    --gap:16px;
+    --gap:40px;
     --num-cols:3;
     --row-height:300px;
     margin: 0;
