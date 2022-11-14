@@ -38,7 +38,7 @@ body {
 }
 
 
-@media  screen and (max-width: 1024px) {
+@media  screen and (max-width: 1920px) {
     /* if screen size has a pixel ratio of 3, then the grid will have 2 columns */
     .image-grid {
         --num-cols: 2;
