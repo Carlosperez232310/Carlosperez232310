@@ -8,9 +8,9 @@ body {
 }
 
 .image-grid {
-    --gap:40px;
+    --gap:16px;
     --num-cols:3;
-    --row-height:300px;
+    --row-height:600px;
     margin: 0;
     padding: var(--gap);
     list-style: none;
